@@ -38,7 +38,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 #### This project was bootstrapped with [create react app](https://create-react-app.dev) & [Node v16](https://nodejs.org/en/) which uses the following technologies:
 
-- [React Router](https://cdn.svgporn.com/logos/react-router.svg) -[GrapghQl](https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css")
+- [React Router](https://cdn.svgporn.com/logos/react-router.svg)
+- [GrapghQL]("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css")
 
 ### License
 
