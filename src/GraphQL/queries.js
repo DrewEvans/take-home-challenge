@@ -24,6 +24,24 @@ export const LOAD_DEALS = gql`
   }
 `;
 
+export const SEARCH_SALES = gql`
+  query saleSearch($searchTerm: String) {
+    saleSearch(query: $searchTerm, travelTypes: "HOTEL_ONLY") {
+      resultCount
+      sales {
+        id
+        editorial {
+          title
+          destinationName
+        }
+        photos {
+          url
+        }
+      }
+    }
+  }
+`;
+
 export const LOAD_SALE = gql`
   query GetSale($id: String!) {
     sale(saleId: $id) {

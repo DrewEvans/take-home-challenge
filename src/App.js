@@ -1,15 +1,10 @@
-import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  gql,
-} from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import './App.css';
 import Home from './pages/Home';
 import SalesPage from './pages/SalesPage';
+import SearchPage from './pages/SearchPage';
 
 const client = new ApolloClient({
   uri: 'https://staging.sparrow.escapes.tech/graphql/',
@@ -23,6 +18,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/sale/:id' element={<SalesPage />} />
+          <Route exact path='/search' element={<SearchPage />} />
         </Routes>
       </BrowserRouter>
     </ApolloProvider>
